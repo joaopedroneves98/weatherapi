@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApi", "WeatherApi\WeatherApi.csproj", "{4BE20A50-CA26-4972-BF37-EEE521985C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C10B74FD-5800-48B6-80BC-EEABAED87195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{924BCB1C-5939-4972-A45C-27EB6BDC26E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BE20A50-CA26-4972-BF37-EEE521985C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE20A50-CA26-4972-BF37-EEE521985C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE20A50-CA26-4972-BF37-EEE521985C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE20A50-CA26-4972-BF37-EEE521985C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10B74FD-5800-48B6-80BC-EEABAED87195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10B74FD-5800-48B6-80BC-EEABAED87195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10B74FD-5800-48B6-80BC-EEABAED87195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10B74FD-5800-48B6-80BC-EEABAED87195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924BCB1C-5939-4972-A45C-27EB6BDC26E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924BCB1C-5939-4972-A45C-27EB6BDC26E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924BCB1C-5939-4972-A45C-27EB6BDC26E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924BCB1C-5939-4972-A45C-27EB6BDC26E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

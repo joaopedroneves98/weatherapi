@@ -3,6 +3,6 @@
     using Entities;
     public interface IWeatherProviderGateway
     {
-        WeatherForecast GetWeatherByCityAsync(string city); //No Task for now
+        Task<WeatherForecast> GetWeatherByCityAsync(string city); //No Task for now
     }
 }

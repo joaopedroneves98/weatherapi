@@ -1,6 +1,10 @@
 ﻿namespace WeatherApi.Controllers
 {
-    using Domain.Abstractions;
+    using System.Net;
+
+    using Application.Interfaces;
+
+    using Domain.Entities;
 
     using Microsoft.AspNetCore.Mvc;
     
@@ -8,18 +12,20 @@
     [Route("weather")]
     public class WeatherController : ControllerBase
     {
-        private readonly IWeatherProviderGateway _weatherProviderGateway;
+        private readonly IWeatherService _weatherService;
         
-        public WeatherController(IWeatherProviderGateway weatherProviderGateway)
+        public WeatherController(IWeatherService weatherService)
         {
-            this._weatherProviderGateway = weatherProviderGateway;
+            this._weatherService = weatherService;
         }
 
         [HttpGet]
-        public IActionResult GetWeatherForecastByCity([FromQuery] string city)
+        [ProducesResponseType(typeof(WeatherForecast), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        public async Task<IActionResult> GetWeatherForecastByCity([FromQuery] string city)
         {
-            var result = this._weatherProviderGateway.GetWeatherByCityAsync(city);
-
+            var result = await this._weatherService.GetWeatherByCityAsync(city);
+            
             return this.Ok(result);
         }
     }

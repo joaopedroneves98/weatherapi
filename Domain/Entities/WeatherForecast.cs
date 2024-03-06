@@ -2,7 +2,7 @@
 {
     public class WeatherForecast
     {
-        public double Temperature { get; set; }
+        public float? Temperature { get; set; }
 
         public string City { get; set; }
 
